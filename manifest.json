@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "快捷翻译插件",
+  "version": "1.0.0",
+  "description": "三连击空格键触发英汉互译",
+  "permissions": [],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "128": "icons/___T.png"
+  }
+}
